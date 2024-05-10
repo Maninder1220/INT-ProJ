@@ -1,9 +1,10 @@
-FROM ubuntu:v1
+FROM ubuntu
 
 RUN apt update
 RUN apt install -y default-jdk
 RUN mkdir app
 
-WORKDIR /app
+WORKDIR /root/app
 
-COPY . /app
+VOLUME home/mone/Journey/ProJs/INT-ProJ/Docker/Doc-Java:/root/app
+
