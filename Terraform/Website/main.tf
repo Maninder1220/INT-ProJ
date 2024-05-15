@@ -1,11 +1,5 @@
-provider "aws" {
-  region  = "us-east-1"
-  profile = "terra-project"
-
-}
 
 # vpc
-
 module "vpc" {
   source   = "../Module/vpc"
   vpc_cidr = var.vpc_cidr
