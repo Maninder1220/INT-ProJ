@@ -4,6 +4,7 @@ This is Terraform Directory
 - VPC
     - Private Subnet
         - Route Table
+        - Elastic IP ( EIP )
         - NAT
     - Public Subnet
         - Route Table
