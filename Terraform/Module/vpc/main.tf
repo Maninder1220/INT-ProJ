@@ -12,7 +12,7 @@ resource "aws_vpc" "vpc" {
 
 
   tags = {
-    Name = "Default VPC"
+    Name = "VPC"
   }
 }
 
