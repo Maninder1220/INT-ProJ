@@ -15,14 +15,11 @@ data "aws_route_table" "private_rt" {
 # Public Route Table
 resource "aws_route_table" "public_rt" {
     vpc_id = aws_vpc.id
-    route = data.aws_route_table.public_rt
-    
 }
 
 # Private Route Table
 resource "aws_route_table" "private_rt" {
-    vpc_id = aws_vpc.id
-    route = data.aws_route_table.private_rt
+    vpc_id = aws_vpc.id  
 }
 
 
@@ -31,6 +28,8 @@ resource "aws_route_table" "private_rt" {
 # Public
 resource "aws_route" "public_route" {
     route_table_id = aws_route_table.public_rt
+    destination_cidr_block = "10.0.2.0/24"
+    gateway_id = aws_internet_gateway.ig.id
   
 }
 
@@ -38,6 +37,8 @@ resource "aws_route" "public_route" {
 # Private
 resource "aws_route" "private_route" {
     route_table_id = aws_route_table.private_rt
+    destination_cidr_block = "10.0.1.0/24"
+    nat_gateway_id = aws_nat_gateway.nat.id
 }
 
 
