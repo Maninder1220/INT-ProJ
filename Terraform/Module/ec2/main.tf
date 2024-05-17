@@ -23,4 +23,5 @@ resource "aws_instance" "ec2" {
     tenancy = "host"
     subnet_id = aws_subnet.public_sn
     associate_public_ip_address = true
+    key_name = aws_key_pair.ec2-kp.key_name
 }
