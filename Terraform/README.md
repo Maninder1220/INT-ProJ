@@ -9,5 +9,6 @@ This is Terraform Directory
         - NAT
     - Public Subnet
         - EC2
+            - Key Pair
         - Route Table
         - Internet Gateway
