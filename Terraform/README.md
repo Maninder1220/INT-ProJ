@@ -1,19 +1,24 @@
 This is Terraform Directory
+# Directory Structure
+- TERRAFORM
+    - Module
+    - Website (Root Module)
 
-# Project 1 - Infrastructure
+# Project - Infrastructure
 - VPC
     - NACL
-        - Private Subnet
-            - Security Group
-                - Security Group Rule
-            - S3
-            - Route Table
-            - Elastic IP ( EIP )
-            - NAT
-        - Public Subnet
-            - Security Group
-                - Security Group Rule
-            - EC2
-                - Key Pair
-            - Route Table
-            - Internet Gateway
+        - NACL Rules
+            - Private Subnet
+             - Security Group
+                    - Security Group Rule
+                - S3
+                - Route Table
+                - Elastic IP ( EIP )
+                - NAT
+            - Public Subnet
+                - Security Group
+                    - Security Group Rule
+                - EC2
+                    - Key Pair
+                - Route Table
+                - Internet Gateway
