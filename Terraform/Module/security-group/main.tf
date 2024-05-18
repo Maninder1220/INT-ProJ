@@ -11,7 +11,7 @@ resource "aws_security_group" "sg" {
 
 
 # Security Group Rules INGRESS
-resource "aws_security_group_rule" "ssh" {
+resource "aws_security_group_rule" "in_ssh" {
     type = "ingress"
     cidr_blocks = ["0.0.0.0/0"]
     protocol = "tcp"
@@ -20,27 +20,27 @@ resource "aws_security_group_rule" "ssh" {
     security_group_id = aws_security_group.sg.id
 }
 
-resource "aws_security_group_rule" "http" {
+resource "aws_security_group_rule" "in_http" {
     type = "ingress"
     cidr_blocks = ["0.0.0.0/0"]
     protocol = "tcp"
-    from_port = "80"
-    to_port = "80"
+    from_port = 80
+    to_port = 80
     security_group_id = aws_security_group.sg.id
 }
 
-resource "aws_security_group_rule" "https" {
+resource "aws_security_group_rule" "in_https" {
     type = "ingress"
     cidr_blocks = ["0.0.0.0/0"]
     protocol =  "tcp"
-    from_port =  "443"
-    to_port =  "443"
+    from_port =  443
+    to_port =  443
     security_group_id = aws_security_group.sg.id
 }
 
 
 # Security Group Rules EGRESS
-resource "aws_security_group_rule" "ssh" {
+resource "aws_security_group_rule" "eg_ssh" {
     type = "egress"
     cidr_blocks = ["0.0.0.0/0"]
     protocol = "tcp"
@@ -49,20 +49,20 @@ resource "aws_security_group_rule" "ssh" {
     security_group_id = aws_security_group.sg.id
 }
 
-resource "aws_security_group_rule" "http" {
+resource "aws_security_group_rule" "eg_http" {
     type = "egress"
     cidr_blocks = ["0.0.0.0/0"]
     protocol = "tcp"
-    from_port = "80"
-    to_port = "80"
+    from_port = 80
+    to_port = 80
     security_group_id = aws_security_group.sg.id
 }
 
-resource "aws_security_group_rule" "https" {
+resource "aws_security_group_rule" "eg_https" {
     type = "egress"
     cidr_blocks = ["0.0.0.0/0"]
     protocol =  "tcp"
-    from_port =  "443"
-    to_port =  "443"
+    from_port =  443
+    to_port =  443
     security_group_id = aws_security_group.sg.id
 }

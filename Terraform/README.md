@@ -4,6 +4,8 @@ This is Terraform Directory
     - Module
     - Website (Root Module)
 
+# Add ALL OUTPUTS TO ROOT MODULE ie WEBSITE/OUTPUT.TF
+
 # Project - Infrastructure
 - VPC
     - NACL

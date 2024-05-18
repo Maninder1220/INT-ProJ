@@ -19,6 +19,8 @@ module "ig" {
 # ROUTE TABLE
 module "rt" {
     source = "../Module/route-table"
+    private_sn_cidr = var.private_sn_cidr
+    public_sn_cidr = var.public_sn_cidr
 }
 
 
@@ -57,5 +59,6 @@ module "ec2" {
 # S3
 module "s3" {
     source = "../Module/s3"
+
 }
 
