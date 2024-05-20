@@ -1,4 +1,4 @@
-This is Terraform Directory
+This is Terraform Project
 # Directory Structure
 - TERRAFORM
     - Module
@@ -10,7 +10,7 @@ This is Terraform Directory
     - NACL
         - NACL Rules
             - Private Subnet
-             - Security Group
+                - Security Group
                     - Security Group Rule
                 - S3
                 - Route Table

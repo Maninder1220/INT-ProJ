@@ -1,0 +1,22 @@
+MY TERRAFORM PROJECT
+In journey of this project I tried to build understanding of IaC (Terraform) and to gain knowledge of networking concepts like NAT, Security Group, Route
+
+# DATA BLOCK
+AVAILABILITY ZONE | ROUTE TABLE | AMI
+
+# RESOURCES BLOCK
+VPC | SUBNET | SECURITY GROUP | SECURITY GROUP RULES
+
+S3 | VPC ENDPOINT 
+
+ROUTE TABLE | ROUTE
+
+NAT GATEWAY | ELASTIC IP
+
+NACL | NACL RULE
+
+KEY PAIR | TLS PRIVATE KEY
+
+INTERNET GATEWAY | IG ATTACHMENT
+
+INSTANCE
