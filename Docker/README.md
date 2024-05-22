@@ -4,6 +4,6 @@ Here we will have all our docker Projects
 It is a simple command line application which take an input
 and then identify weather it is Even or Odd or Invalid input
 
-# Project 2 Persisting Volume Project | Project Name : Doc-Jen-Vol | Status : Working
+# Project 2 Persisting Volume Project | Project Name : Doc-Jen-Vol | Status : Complete
 In this project i will create a Docker Volume Locally(Laptop) and Remotely(Cloud) 
 to persist volume of our jenkins server.

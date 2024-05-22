@@ -19,3 +19,4 @@ User : ManE
 Pass : mane@69
 
 # Data is persistent throught different jenkins server in this case there are two port that are 9090 and 9091 respectively
+# add for bind mount too
