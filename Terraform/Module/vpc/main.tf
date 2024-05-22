@@ -10,9 +10,8 @@ resource "aws_vpc" "vpc" {
         instance_tenancy = "default"
         enable_dns_hostnames = true
 
-
   tags = {
-    Name = "VPC"
+    Name = "OnO VPC"
   }
 }
 
@@ -24,6 +23,7 @@ resource "aws_subnet" "private_sn" {
   cidr_block = var.private_sn_cidr
   availability_zone = data.aws_availability_zone.az
   map_public_ip_on_launch = false 
+  
   
 }
 

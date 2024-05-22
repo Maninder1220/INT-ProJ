@@ -1,6 +1,7 @@
 MY TERRA-NETWORKING PROJECT
-In journey of this project I tried to build understanding of IaC (Terraform) and to gain knowledge of networking concepts
-like NAT, NACL, Security Group, Route .. following is the list of Data Block and Resource Block present in this IaC-Networking  Project.
+In journey of this project I tried to build understanding of IaC (Terraform) and to gain 
+knowledge of networking concepts like NAT, NACL, Security Group, Route .. 
+following is the list of Data Block and Resource Block present in this IaC-Networking Project.
 
 
 # DATA BLOCK
