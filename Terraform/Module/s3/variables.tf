@@ -1,1 +1,1 @@
-# NO VARIABLES FOR S3
+variable "bucket_name" {}

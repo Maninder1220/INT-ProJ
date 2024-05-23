@@ -1,6 +1,6 @@
 # s3 Bucket
 resource "aws_s3_bucket" "s3" {
-    bucket = "my_private_bucket"
+    bucket = var.bucket_name
     
 }
 

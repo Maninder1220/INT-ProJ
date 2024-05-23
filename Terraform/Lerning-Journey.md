@@ -105,3 +105,50 @@
         - aws_vpc_endpoint 
         when vpc endpoint is created we establish a private connection between vpc and the service .. so in our case we are connecting with s3.
         VPC can be managed using VPC endpoints, IAM policies, and bucket policies.
+    
+    - ROUTE TABLE
+    In here we define thorugh which route our traffic will flow, i have created 6 resource for routing.
+
+    2 Route Table
+      - In this block we define in which vpc route are created by adding vpc_id attribute
+
+    2 Route
+      - In this block we are defining the flow of traffic
+        with attributes like 
+          - route_table_id
+          - destination_cider_block
+          - gateway_id or nat_gateway_id
+
+    2 Route Table Association
+      - In this block we define association between
+        route table and subnet
+    
+    So my public subnet is accessing traffic from internet gateway and private subnet form nat gateway
+
+    - NAT GATEWAY
+    This works as Internet gateway for my Private Subnet, and 
+    for creating a nat we must have Elastic Ip for it, so for my nat gateway i have created 2 Resource Block ie Elastic Ip Block and Nat Gateway Block.
+
+    In Elastip IP Resource we have to mention under attribute instance to which resource this IP belong, and 
+    In Nat Gateway Resource we have to mention to which subnet it is connected to and which Elestic Ip it have
+
+    - NACL
+    NACL works withing VPC at Subnet level, in this NACL i have allow inbound and ourbound through port 22, 80 and 443 for ssh , http and https respectively.
+
+    In NACL resource block we have to mention within which vpc our nacl work for that we mwntion vpc_id and
+
+    In aws_network_acl_rule we specify which type of traffic we need to allow with protocols like
+      - egress : can be true or false
+      - rule_number
+      - protocol
+      - rule_action : can be allow or deny
+      - cidr_block
+      - from_port
+      - to_port
+      - network_acl_id
+
+    - EC2
+    In EC2 there are few Blocks are working with each other and that is Data Block for AMI, Resource Block for EC2 and Keypair that include 2 Resource block that is tls_private_key and aws_key_pair.
+
+    - Internet Gateway
+    In this we have created 2 resource one for Internet gateway and other resource for attachment of Ig with the VPC

@@ -59,6 +59,7 @@ module "ec2" {
 # S3
 module "s3" {
     source = "../Module/s3"
+    bucket_name = var.bucket_name
 
 }
 
