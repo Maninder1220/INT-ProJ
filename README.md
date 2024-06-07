@@ -9,4 +9,8 @@ AWS | DOCKER | TERRAFORM | JENKINS
 
 # TERRAFORM
 - Creating terraform infrastructure from scratch using terraform documentation.
-- Terraform detailed explaination is in Terraform/README.md 
+- Terraform detailed explaination is in Terraform/README.md
+
+# AWS n DevOps
+- Here i will be building understanding of DevOps Concepts on AWS Cloud with 7 Projects
+- Detailed Explaination is in AWSnDevOps folder .. AWSnDevOps/README.md
