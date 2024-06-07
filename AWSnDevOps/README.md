@@ -1,0 +1,4 @@
+SEVEN DAYs SEVEN PROJECTs
+
+
+# DAY ONE | Project - AWS SNS
