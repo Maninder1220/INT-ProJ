@@ -29,4 +29,37 @@ Clients can subscribe to the SNS topic and receive published messages using a su
   - Subscribers receive the message through their respective protocols
     EG -  HTTP/HTTPS, Email, SMS, Lambda function, SQS queue ...
 
+# LERNING FORM YOUTUBE
+> What is SNS?
 
+- Message Publishing and Processing Service (PubSub)
+- Allows Fanout to millions of consumer
+- Fully managed and durable with automatic scaling
+- Consist of `Topics` and `Subscription`
+- Ways to use or Flavour
+    - Application to Person
+        - Single Topic to Many Subscriber
+        - Direct Message to Specific Subscriber
+    - Application to Application
+        - It's Application to Application messaging
+        
+
+> Creating a Topic
+ 
+- NAME
+- ENCRYPTION - `IMP`
+    - Can use ***Key Master Service*** for encryption
+- ACCESS POLICIE - `IMP`
+- DELIVERY RETRY POLICIES - `IMP`
+- DELIVERY STATUS LOGGING
+    - Log is generated
+    
+
+> Creating Subscription
+
+- Subscription can be created independently
+- SUBSCRIPTION FILTER POLICIES - `IMP`
+    - It reduces cost
+- RETRIEVE POLICY - `IMP`
+    - Dead letter queue
+    - You have to have SQS
