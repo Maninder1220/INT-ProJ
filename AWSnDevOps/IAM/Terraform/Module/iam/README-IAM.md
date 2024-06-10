@@ -14,7 +14,7 @@ Building policies with terraform.
         OU refers to a logical grouping within a company,
         allowing for efficient management of resources, permissions, and policies.
           - It have set of AWS Account
-          - Accounts are known as Member Account or Child Account
+          - Accounts are known as Member Account or Child Account.
 
         - SCP (Service Control Policy)
           -> these are permission boundries
@@ -36,7 +36,7 @@ Granularity: IAM policies offer more granular control over permissions since the
 # AWS LANDING ZONE
 - What is AWS Landing Zone
   It is a secure, multi-account foundation built on AWS
-  It is starting point that provides a baseline for
+  It is starting point that provides a baseline for,
   - Account Structure
   - IAM
   - Define rules and processes eg SCP
