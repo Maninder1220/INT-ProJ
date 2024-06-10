@@ -65,10 +65,18 @@ and operational excellence in an AWS environment.
   - There are primarily two types of guardrails in AWS Control Tower.
     - Preventive
       It ensures that your account maintain compliance, because it disallows actions that lead to policy violations
-      EG - Restricting access to certain AWS regions, enforcing encryption for S3 buckets,
-           or ensuring that IAM users cannot be created with excessive privileges.
+      EG - Restricting access to certain AWS regions, enforcing encryption for S3 buckets, or ensuring that IAM users cannot be created with excessive privileges.
     - Detective
       Detect non-compliance of resources within your account such as policy violations and provides alert through dashboard
-      EG - Detecting unencrypted EC2 instances, identifying publicly accessible S3 buckets,
-           or monitoring IAM roles with excessive permissions.
+      EG - Detecting unencrypted EC2 instances, identifying publicly accessible S3 buckets, or monitoring IAM roles with excessive permissions.
 
+
+# MY O OU POLICY n IAM INFRASTRUCTURE
+ROOT
+  - MASTER (Organization)
+
+      - Dev (OU)
+          - dev_1 (IAM Account)
+          
+      - Prod (OU)
+          - prod_1 (IAM Account)
