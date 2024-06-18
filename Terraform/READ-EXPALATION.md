@@ -38,7 +38,7 @@ INSTANCE
             - Private Subnet
                 - Security Group
                     - Security Group Rule
-                - S3
+                - S3 ( Global Service )
                 - Route Table
                 - Elastic IP ( EIP )
                 - NAT
