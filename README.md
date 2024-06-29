@@ -14,3 +14,7 @@ AWS | DOCKER | TERRAFORM | JENKINS
 # AWS n DevOps
 - Here i will be building understanding of DevOps Concepts on AWS Cloud with 7 Projects
 - Detailed Explaination is in AWSnDevOps folder .. AWSnDevOps/README.md
+
+# Observability and Monitoring
+- Here i m trying to build understanding of Obseverbility and Monitoring
+- For current i know only how to set up Grafana.
