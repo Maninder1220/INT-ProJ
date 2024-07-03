@@ -1,6 +1,10 @@
 # Observability and Monitoring Stack
 
-# LOGSTASH - Ingest | Process | Output
+# SHIPPER - Collect | Trasnform | Transport   [ DATA COLLECTION ]
+- Shipper plays a very important role in logstash, it collect, transform and transport data
+- It act as intermediaries that collect, process, and transport data from various sources to centralized systems for analysis.
+
+# LOGSTASH - Ingest | Process | Output        [ DATA PROCESSING ]
 
 - It is Data Processing Pipeline
 - IT has 3 Important Component INPUT, FILTER and OUTPUT
@@ -20,3 +24,6 @@
   - 
 
 # Output
+
+
+#
