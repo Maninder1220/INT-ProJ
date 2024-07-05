@@ -5,7 +5,13 @@
 - It act as intermediaries that collect, process, and transport data from various sources to centralized systems for analysis.
 
 # LOGSTASH - Ingest | Process | Output        [ DATA PROCESSING ]
+Home Dir of LogStash : /usr/share/logstash
+Config files in      : /etc/logstash
 
+LogStash is a free Open Server Side data processing pipeline, which ingest data from a multitude of sources.
+
+- LogStash pipeline has two required element INPUT and OUTPUT and optional FILTER
+- LogStash Dynamically ingest, transforms and ships your data
 - It is Data Processing Pipeline
 - IT has 3 Important Component INPUT, FILTER and OUTPUT
 
